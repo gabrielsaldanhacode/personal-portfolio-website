@@ -1,61 +1,125 @@
+/* --- 1. GENERAL PAGE STYLES --- */
 body {
     font-family: Verdana, sans-serif;
     font-size: 16px;
     line-height: 1.6;
-    background-color: royalblue;
-    color: white;}
+    background-color: royalblue; /* This brings back the blue background */
+    color: white;
+    margin: 0;
+}
 
-a {color: #FFBF00;}
-
+/* --- 2. HEADINGS & LINKS --- */
 h1 {
     font-size: 2.5em;
-    color: #FFBF00;
-    margin-bottom: 10px; }
+    color: #FFBF00; /* Gold color */
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
 
 h2 {
     font-size: 1.8em;
     border-bottom: 2px solid white; 
     padding-bottom: 5px;
-    margin-top: 40px;}
+    margin-top: 40px;
+}
 
 a {
+    color: #FFBF00;
     text-decoration: none;
-    font-weight: bold;}
+    font-weight: bold;
+}
 
 a:hover {
-    text-decoration: underline;}
+    text-decoration: underline;
+}
 
+/* --- 3. LAYOUT & IMAGES --- */
 .container {
     width: 80%;
     max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;}
+    margin: 0 auto; /* Centers the content */
+    padding: 20px;
+}
 
 img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 20px auto;
-    border-radius: 8px;}
+    border-radius: 8px;
+}
 
+/* --- 4. LISTS (for Contact page/Home) --- */
 ul {
     list-style-type: none; 
-    padding: 0;}
+    padding: 0;
+}
 
 li {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 10px;
     margin-bottom: 5px;
-    border-radius: 5px;}
+    border-radius: 5px;
+}
 
+/* --- 5. PROJECTS TABLE STYLES (New 4-Column Layout) --- */
 table {
-    width: 100%;
-    margin-top: 20px;
-    border-collapse: collapse;}
+    width: 100%; /* Fits the container */
+    max-width: 100%;
+    margin: 40px auto 20px auto; 
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    border-radius: 5px; 
+}
+
+th {
+    padding: 12px;
+    border: 1px solid white;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-bottom: 2px solid white; 
+}
 
 td {
     padding: 10px;
-    border: 1px solid white;}
+    border: 1px solid white; 
+    vertical-align: top;
+}
 
+/* Column Widths */
+td:nth-child(1) { /* Project Name */
+    width: 20%;
+    font-weight: bold;
+}
+td:nth-child(2) { /* Status */
+    width: 10%;
+    text-align: center;
+}
+td:nth-child(3) { /* Description */
+    width: 55%; 
+}
+td:nth-child(4) { /* Links */
+    width: 15%;
+    text-align: center;
+}
 
-
+/* --- 6. MOBILE RESPONSIVENESS (Mandatory) --- */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Use more screen space on mobile */
+        overflow-x: hidden; /* Prevent body scroll */
+    }
+    
+    /* Make the TABLE scrollable on mobile, not the whole page */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap; /* Keeps rows on one line while scrolling */
+    }
+    
+    /* Allow description text to wrap nicely inside the scrollable area */
+    td:nth-child(3) {
+        white-space: normal;
+        min-width: 200px;
+    }
+}
