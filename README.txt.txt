@@ -28,3 +28,19 @@ JavaScript Concepts Applied:
 - Functions (traditional)
 - Conditionals (if/else if/else)
 - Event Listeners (DOMContentLoaded)
+
+Project: Milestone 4 - Final Adjusts
+
+Deployment Links:
+
+Live Site URL: https://gabrielsaldanhacode.github.io/personal-portfolio-website/
+
+GitHub Repository: https://github.com/gabrielsaldanhacode/personal-portfolio-website
+
+New Features Implemented:
+
+Interactive Contact Form (contact.html): Replaced static text with a functional HTML form. Added JavaScript validation to ensure all fields are filled and the email format is valid before "sending" (simulated).
+
+Advanced Feature - Page Counter (index.html): Used the localStorage API to track and display the number of times a user has visited the homepage.
+
+Responsive Projects Table (projects.html): Updated CSS to ensure the 4-column table displays correctly on mobile devices by becoming scrollable.
