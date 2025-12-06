@@ -8,20 +8,35 @@
 </head>
 <body>
     <div class="container">
-    <h1>Contact Me</h1>
+        <h1>Contact Me</h1>
 
-    <p>
-        <a href="index.html">Home</a> &mdash;
-        <a href="projects.html">Projects</a> &mdash;
-        <a href="contact.html">Contact</a>
-    </p>
+        <p>
+            <a href="index.html">Home</a> &mdash;
+            <a href="projects.html">Projects</a> &mdash;
+            <a href="contact.html">Contact</a>
+        </p>
 
-    <p>The best way to reach me is through email or Handshake. Let's connect!</p>
-    
-    <ul>
-        <li><strong>Email:</strong> gcostasaldanha@my.madonna.edu (placeholder)</li>
-        <li><a href="https://app.joinhandshake.com/profiles/fhpez4" target="_blank">My Handshake Profile</a></li>
-    </ul>
+        <p>The best way to reach me is through email or LinkedIn. Let's connect! Please use the form below.</p>
+
+        <form id="contactForm">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" style="width: 100%; padding: 8px; margin-bottom: 10px;"><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" style="width: 100%; padding: 8px; margin-bottom: 10px;"><br>
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" style="width: 100%; padding: 8px; margin-bottom: 10px; height: 100px;"></textarea><br>
+            
+            <button type="submit" style="background-color: #FFBF00; color: royalblue; padding: 10px 20px; border: none; font-weight: bold; cursor: pointer; border-radius: 5px;">Send Message</button>
+            
+            <p id="validationMessage" style="font-weight: bold; margin-top: 10px;"></p>
+        </form>
+        <h2>Other Links</h2>
+        <ul>
+            <li><strong>Email:</strong> gcostasaldanha@my.madonna.edu (placeholder)</li>
+            <li><a href="https://www.linkedin.com/in/gabriel-saldanha-2694b9397/" target="_blank">My LinkedIn Profile</a></li>
+        </ul>
     </div>
     <script src="js/script.js"></script>
 </body>
